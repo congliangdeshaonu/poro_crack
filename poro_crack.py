@@ -60,7 +60,7 @@ bcu=[bc,bc1,bc2]
 class NeumannBoundary_RL(SubDomain):
     def inside(self, x, on_boundary):
         return on_boundary and (near(x[0], 0, tol) or near(x[0], 1, tol))
-
+# Neumann boundary on y=1 for pressure
 class NeumannBoundary_Top(SubDomain):
     def inside(self, x, on_boundary):
         return on_boundary and near(x[1], 1, tol)
