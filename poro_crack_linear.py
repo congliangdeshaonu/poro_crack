@@ -199,7 +199,7 @@ while t<=0.6:
         if iter>=10:
             break
     if iter>=10:
-        print('inconvergence')
+        print('divergence')
         break
         
     # print(t)
