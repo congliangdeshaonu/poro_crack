@@ -55,7 +55,7 @@ def g(d,tol):
 def psi(u):
     return inner(sigma(u),epsilon(u))
 def H(unew,Hold):
-    return conditional(lt(Hold,psi(unew)),psi(unew),Hold)
+    return conditional(lt(Hold,psi(unew)),psi(unew),Hold) #if Hold less than psi(new): H=psi(unew), else: H=Hold
 
 
 '''
